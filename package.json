@@ -1,0 +1,69 @@
+{
+    "name": "hosts-mgr",
+    "productName": "hosts-mgr",
+    "version": "1.0.0",
+    "description": "My Electron application description",
+    "main": "src/index.js",
+    "scripts": {
+        "start": "electron-forge start",
+        "package": "electron-forge package",
+        "make": "electron-forge make",
+        "lint": "echo \"No linting configured\""
+    },
+    "keywords": [],
+    "author": "penglinwei259",
+    "license": "MIT",
+    "config": {
+        "forge": {
+            "make_targets": {
+                "win32": [
+                    "squirrel"
+                ],
+                "darwin": [
+                    "zip"
+                ],
+                "linux": [
+                    "deb",
+                    "rpm"
+                ]
+            },
+            "electronPackagerConfig": {
+                "packageManager": "yarn"
+            },
+            "electronWinstallerConfig": {
+                "name": "hosts_mgr"
+            },
+            "electronInstallerDebian": {},
+            "electronInstallerRedhat": {},
+            "github_repository": {
+                "owner": "",
+                "name": ""
+            },
+            "windowsStoreConfig": {
+                "packageName": "",
+                "name": "hostsmgr"
+            }
+        }
+    },
+    "dependencies": {
+        "electron-compile": "^6.4.1",
+        "electron-devtools-installer": "^2.0.1",
+        "immutable": "3.8.1",
+        "normalizr": "3.2.3",
+        "react": "^15.4.1",
+        "react-dom": "^15.4.1",
+        "react-hot-loader": "^3.0.0-beta.6",
+        "react-redux": "5.0.6",
+        "redux": "3.7.2",
+        "redux-saga": "0.15.6",
+        "uuid": "3.1.0"
+    },
+    "devDependencies": {
+        "babel-plugin-transform-async-to-generator": "^6.24.1",
+        "babel-plugin-transform-es2015-classes": "^6.24.1",
+        "babel-preset-env": "^1.6.0",
+        "babel-preset-react": "^6.24.1",
+        "electron-forge": "^4.0.2",
+        "electron-prebuilt-compile": "1.7.6"
+    }
+}

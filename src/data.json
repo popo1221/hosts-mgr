@@ -1,0 +1,25 @@
+{
+    "version": "1.0",
+    "entities": {
+        "hosts": {
+            "1": {
+                "id": "1",
+                "name": "hosts1",
+                "content": "#empty"
+            },
+            "2": {
+                "id": "2",
+                "name": "hosts2",
+                "content": "#empty"
+            },
+            "3": {
+                "id": "3",
+                "name": "hosts3",
+                "content": "#empty"
+            }
+        }
+    },
+    "ui": {
+        "activeList": ["1", "2"]
+    }
+}
